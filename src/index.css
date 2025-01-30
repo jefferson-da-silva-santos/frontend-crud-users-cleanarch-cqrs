@@ -1,0 +1,227 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  position: relative;
+}
+
+.message {
+  position: fixed;
+  top: 0;
+  border-radius: 50px;
+  right: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+  margin: 1rem;
+  color: white;
+  padding: 0.5em 2rem;
+  font-size: 1rem;
+  z-index: 99999;
+}
+
+.bi-check-circle-fill {
+  color: rgb(0, 145, 0);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 0px 10px #646cff;
+  padding: 2rem;
+  animation: borderShadow 3s ease 0s infinite normal forwards;
+}
+
+@keyframes borderShadow {
+  0% {
+    box-shadow: 0px 0px 10px #646cff;
+  }
+  50% {
+    box-shadow: 0px 0px 30px #646cff;
+  }
+  100% {
+    box-shadow: 0px 0px 10px #646cff;
+  }
+}
+
+.bav__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 1rem 2rem 3rem 2rem;
+  width: 100%;
+  background-color: #1a1a1a;
+  max-width: 40em;
+  animation: borderShadow 3s ease 0s infinite normal forwards;
+  border-radius: 5px;
+  border: 1px solid #646cff;
+}
+
+.card-users__title {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.group-users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3b3b3b;
+  height: 35em;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.user {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 10px;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+.btn-copy {
+  position: absolute;
+  right: 0;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.user__img {
+  width: 55px;
+}
+
+.user__info span {
+  color: #646cff;
+}
+
+.user__info__id .id {
+  color: rgb(134, 134, 0);
+  font-size: 0.7em;
+}
+
+.form-insert {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  animation: borderShadow 3s ease 0s infinite normal forwards;
+  gap: 1rem;
+  width: 100%;
+  max-width: 40em;
+  border: 1px solid #646cff;
+}
+
+.form-insert__title {
+  font-weight: 400;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  font-size: 1em;
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #646cff;
+  font-size: 1em;
+  margin-top: 1rem;
+  transition: 0.4s ease all;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #4952fd;
+}
+
+.busca-group {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.btn__buscar {
+  background-color: #646cff;
+  height: 3.2em;
+}
+
+#id {
+  width: 29.5em;
+}
+
+#del-btn {
+  background-color: rgb(255, 0, 85);
+}
+
+.buttons-form {
+  display: flex;
+  gap: 1.2rem;
+}
